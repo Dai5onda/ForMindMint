@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@700&display=swap" rel="stylesheet">
+    <title>For mind mint</title>
+</head>
+<style>
+    html, body { margin: 0; padding: 0; width: 100%; height: 100%; }
+    h1{
+        color: black;
+        font-family: 'Sarabun', sans-serif;
+        text-align: center;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translateX(-50%) translateY(-75%);
+}
+
+</style>
+<body id= "main" onclick="changePage()">
+<script>
+var color = ["#ffccdd","#FFFDE2", "#f4a261", "#FF8184" , "#D52A3E", "#D01760","#E66B80"];
+var text = ["เจ๋งปะ 555","นี้เราเอง<br/> ได ","เราอยากจะบอกว่าเราขอโทษ<br/>ที่ทำให้เธอรู้สึกแย่บางที","เราเข้าใจแล้วว่าเกิดไรขึ้น<br/>เราจะปรับปรุงตัว","เรารักเธอมากๆนะ<br/> ถึงแม้ว่าบางมี่เราไม่ได้แสดงออก<br/> เธอให้ความอบอุ่นเรา อยู่ปลอบเรา ให้กำลังใจเรา<br/> ขอบคุณมากๆ", "ถ้าตอนนี้เธอยังรู้สึกแย่ที่เราทำอยู่ก็ ให้อภัยเรานะ<br/>เราจะไม่ทำแบบนั้นอีกแล้ว</br>รอบนี้สัญญาจริงๆ","เรากลับมาคืนดีกันนะ",""," "," "," "," "," "," "]
+document.getElementById("main").style.backgroundColor = "#CCCCFF"
+var i = -1
+function changePage(){
+    i = i+1;
+    document.getElementById("main").style.backgroundColor = color[i];
+    document.getElementById("Text").innerHTML = text[i];
+}
+
+
+</script>
+<h1 id = "Text" style="color:black;">แตะดูสิ</h1>
+</body>
+</html>
